@@ -13,6 +13,8 @@ Requires: droid-config-cedric-preinit-plugin
 Requires: droid-config-cedric-flashing
 Requires: droid-config-cedric-bluez5
 Requires: droid-hal-version-cedric
+Requires: ofono-ril-binder-plugin
+Requires: bluebinder
 
 # Hybris packages
 Requires: libhybris-libEGL
@@ -58,8 +60,15 @@ Requires: usb-moded
 # hammerhead, grouper, and maguro use this in scripts, so include for all
 Requires: rfkill
 
+## Fingerprint
+Requires: sailfish-fpd-community
+Requires: sailfish-fpd-community-test
+
+## Use screenlock supporting FPD
+Requires: sailfish-devicelock-fpd
+
 # enable device lock and allow to select untrusted software
-Requires: jolla-devicelock-daemon-encsfa
+#Requires: jolla-devicelock-daemon-encsfa
 
 # Enable home encryption
 #Requires: sailfish-device-encryption
@@ -77,6 +86,7 @@ Requires: geoclue-provider-hybris
 # These plugins are mutually exclusive, you need to pick one:
 #Requires: nfcd-binder-plugin
 #Requires: nfcd-pn54x-plugin
+Requires: dummy_netd
 
 %description -n patterns-sailfish-device-adaptation-cedric
 Pattern with packages for cedric HW Adaptation

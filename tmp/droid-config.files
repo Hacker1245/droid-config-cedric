@@ -76,7 +76,14 @@
 /etc/acdbdata
 /boot/flashing-README.txt
 /boot/extracting-README.txt
+/odm/lib64/libandroidicu.so
+/odm/lib/libicuuc.so
+/odm/lib/libicui18n.so
+/odm/lib/libandroidicu.so
 /var/lib/environment/compositor/droid-hal-device.conf
+/usr/libexec/droid-hybris/system/lib64/libaudioroute.so
+/usr/libexec/droid-hybris/system/lib/libaudioroute.so
+/usr/share/csd/settings.d/hw-settings.ini
 /etc/selinux/config
 /etc/selinux/minimum/contexts/files/file_contexts
 /etc/selinux/minimum/contexts/dbus_contexts
